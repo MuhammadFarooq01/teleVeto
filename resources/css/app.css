@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the custom colors as CSS variables */
+:root {
+    --color-deepNavyBlue: #001F44;
+    --color-skyBlue: #6EC1E4;
+    --color-brightAzure: #4BA4E9;
+    --color-lightBeige: #F5EFE0
+}
+
+/* Hero Section Gradient */
+.solid-gradient-hero {
+    background: linear-gradient(90deg, var(--color-deepNavyBlue) 70%, var(--color-skyBlue) 30%);
+}
+
+/* Responsive Gradient */
+@media (max-width: 1023px) {
+    .solid-gradient-hero {
+        background: linear-gradient(180deg, var(--color-deepNavyBlue) 70%, var(--color-skyBlue) 30%);
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--color-lightBeige);
+}
+
+main {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#loginModal {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#modalContent {
+    transition: transform 0.5s ease-in-out;
+}
+
+.scale-75 {
+    transform: scale(0.75);
+}
+
+.scale-100 {
+    transform: scale(1);
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
